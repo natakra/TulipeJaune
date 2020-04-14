@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin-left: auto;
+}
+body {
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: right;
+    margin-right: 15%;
+    color: #ffcc00;
+    font-family: 'Cookie', cursive;
+    font-size: 5rem;
+    margin-bottom: -3vh;
+}
+
+#hidden {
+    display: none;
+    border: solid #fff 1px;
+    border-collapse: collapse;
+}
+th, td {
+    border: solid #fff 1px;
+} 
+.content {
+    display: block;
+    height: 73vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: solid #FFF 3px;
+}
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: #000;
+  overflow: auto;
+  font-family: 'Great Vibes', cursive;
+  /*border-bottom: solid #FFFFFF 3px; */
+
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #ffd633;
+  color: #000;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+/* Border content */
+.border {
+    height: 73vh;
+    border-top: solid #FFF 3px;
+    padding-left: 25%;
+    padding-right: 25%;
+    background-image: url("https://i.pinimg.com/564x/c4/2a/d4/c42ad4b2b03e1a025f58434dd5b10b63.jpg");
+    background-repeat: no-repeat;
+    background-size: 26.6%;
+    
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center; /* If you want the text to be left-aligned on small screens */
+  }
+}
